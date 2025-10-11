@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canyon Critters</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img class="logo" alt="Canyon Critters" src="./assets/logo.png" height="100px" width="150px"/>
+                <h1>Canyon Critters</h1>
+                <div>
+                    <img class="menu-icon" src="./public/icons/menu.svg" />
+                </div>             
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#">Home</a></li>
+                    <li class="nav-list-item"><a href="#">Events</a></li>
+                    <li class="nav-list-item"><a href="#">Rescue</a></li>
+                    <li class="nav-list-item"><a href="#">News Coverage</a></li>
+                    <li class="nav-list-item"><a href="#">About</a></li>
+                    <li class="nav-list-item"><a href="#">Contact</a></li>
+                    <li class="donate-btn-item"><a class="btn">Donate Now</a></li>
+                    <li><img class="close-menu-icon" src="./public/icons/close.svg"></img></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+        </div>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector(".menu-icon");
+        const navItems = document.querySelector(".nav-items");
+        const closeNavMenuIcon = document.querySelector(".close-menu-icon");
+
+        const toggleMenu = () => {
+            navItems.toggleAttribute("hidden");
+        }
+
+        menuIcon.addEventListener("click", toggleMenu);
+        closeNavMenuIcon.addEventListener("click", toggleMenu)
+    </script>
+</body>
+</html>
