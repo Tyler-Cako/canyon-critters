@@ -16,6 +16,7 @@
                     <img class="menu-icon" src="./public/icons/menu.svg" />
                 </div>             
             </div>
+        </nav>
 
             <div class="nav-items" hidden>
                 <ul class="nav-list">
@@ -25,48 +26,39 @@
                     <li class="nav-list-item"><a href="./news.html">News Coverage</a></li>
                     <li class="nav-list-item"><a href="./about.html">About</a></li>
                     <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
-                    <li class="donate-btn-item"><a class="btn">Donate Now</a></li>
                 </ul>
+                <div class="close-menu-container">
+                    <a class="donate-btn-item"><a class="btn">Donate Now</a>
+                </div>
                 <div class="close-menu-container">
                     <img class="close-menu-icon icon" src="./public/icons/close.svg"></img>
                 </div>
             </div>
-        </nav>
+
 
         <div class="container">
-            <h2>Welcome to Canyon Critters</h2>
-            <p>
-                Canyon Critters is a reptile and wolf rescue located in Golden Colorado. We hope to provide hands-on education about education and to promote responsible pet ownership.
-            </p>
-            <div class="banner-btn">
-                <a class="btn">Meet some of the critters here!</a>
-            </div>
-            <br/>
-            <p>
-                Have a party or event planned that could use some critters?
-            </p>
-            <div class="banner-btn">
-                <a class="btn">Book a session with us here!</a>
-            </div>
-            <br />
-            <p>You're support is vital to keeping the rescue running. Please consider donating.</p>
-            <div class="banner-btn">
-                <a class="btn">Donate</a>
-            </div>
+            <div class="content-container">
+                <h2>Welcome to Canyon Critters!</h2>
+                <p>
+                    Canyon Critters is a reptile and wolf rescue located in Golden Colorado. We hope to provide hands-on education about education and to promote responsible pet ownership.
+                </p>
+                <div class="banner-btn" id="boyscout">
+                    <a class="btn">Meet the critters</a>
+                </div>
+                <p>
+                    Have a party or event planned that could use some critters?
+                </p>
+                <div class="banner-btn" id="snake-event">
+                    <a class="btn">Book a session</a>
+                </div>
+                <p>You're support is vital to keeping the rescue running. Please consider donating.</p>
+                <div class="banner-btn" id="wolf">
+                    <a class="btn">Donate</a>
+                </div>
+            </div>  
         </div>
     </div>
 
-    <script>
-        const menuIcon = document.querySelector(".menu-icon");
-        const navItems = document.querySelector(".nav-items");
-        const closeNavMenuIcon = document.querySelector(".close-menu-icon");
-
-        const toggleMenu = () => {
-            navItems.toggleAttribute("hidden");
-        }
-
-        menuIcon.addEventListener("click", toggleMenu);
-        closeNavMenuIcon.addEventListener("click", toggleMenu)
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
