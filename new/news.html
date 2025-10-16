@@ -9,15 +9,19 @@
 <body>
     <div class="main">
         <nav class="navbar">
-            <div class="logo-container">
-                <img class="logo" alt="Canyon Critters" src="./assets/logo.png" height="100px" width="150px"/>
-                <h1>Canyon Critters</h1>
-                <div>
+                <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px"/>
+                <div class="center-icon-container">
                     <img class="menu-icon" src="./public/icons/menu.svg" />
                 </div>             
-            </div>
+        </nav>
 
-            <div class="nav-items">
+            <div class="nav-items" hidden>
+                <div class="navbar">
+                    <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px"/>
+                <div class="center-icon-container">
+                    <img class="close-menu-icon icon" src="./public/icons/close.svg"></img>
+                </div>          
+                </div>
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="./index.html">Home</a></li>
                     <li class="nav-list-item"><a href="./events.html">Events</a></li>
@@ -25,32 +29,52 @@
                     <li class="nav-list-item"><a href="./news.html">News Coverage</a></li>
                     <li class="nav-list-item"><a href="./about.html">About</a></li>
                     <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
-                    <li class="donate-btn-item"><a class="btn">Donate Now</a></li>
                 </ul>
                 <div class="close-menu-container">
-                    <img class="close-menu-icon icon" src="./public/icons/close.svg"></img>
+                    <a class="btn" href="https://venmo.com/u/Nico-Novelli" target="_blank">Donate</a>
                 </div>
             </div>
-        </nav>
+
 
         <div class="container">
-            <p>
-                news
-            </p>
+            
         </div>
-    </div>
 
-    <script>
-        const menuIcon = document.querySelector(".menu-icon");
-        const navItems = document.querySelector(".nav-items");
-        const closeNavMenuIcon = document.querySelector(".close-menu-icon");
+        </div>
 
-        const toggleMenu = () => {
-            navItems.toggleAttribute("hidden");
-        }
+        <footer>
+            <div class="container">
+                <!-- <div class="footer-info">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Schedule an Event</a></li>
+                        <li><a href="#">Rescue</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li>Canyon Critters</li>
+                        <li>PO Box 7231</li>
+                        <li>80403</li>
+                        <li>Golden Colorado</li>
+                        <li>303.642.0690</li>
+                        <li>nico@canyoncritters.com</li>
+                    </ul>
+                </div> -->
 
-        menuIcon.addEventListener("click", toggleMenu);
-        closeNavMenuIcon.addEventListener("click", toggleMenu)
-    </script>
+                <div class="social-media">
+                    <a href="#" aria-label="facebook"><img width="50px" src="./public/icons/facebook.svg" ></a>
+                    <a href="#" aria-label="instagram"><img width="50px" src="./public/icons/instagram.svg" ></a>
+                    <a href="#" aria-label="youtube"><img width="50px" src="./public/icons/youtube.svg" ></a>
+                </div>
+                
+                <p class="copyright">
+                    <a href="https://canyoncritters.com" title="">
+                        Licensed and Insured © Canyon Critters — All Rights Reserved © 2025
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
