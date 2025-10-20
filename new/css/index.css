@@ -2,12 +2,17 @@
     --light-olive-green: #fffde2;
     --olive-green: #ccc9a2;
     --dark-olive-green: #3f5835;
+    --secondary-dark-olive-green: #384f30;
+    --clicked-dark-olive-green: #314429;
     --light-green: #b5d6b2;
 }
 
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
 }
 
 html {
@@ -27,9 +32,8 @@ footer {
 }
 
 footer * {
-    list-style: none;
-    text-decoration: none;
-    color: black;
+    display: flex;
+    align-items: center;
 }
 
 .navbar {
@@ -74,6 +78,25 @@ footer * {
     width: 100%;
 }
 
+.lg-screen-nav-items {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.lg-screen-nav-list {
+    display: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.center-icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .main {
     flex: 1;
 }
@@ -95,7 +118,6 @@ footer * {
     border-bottom: 1.5px solid var(--olive-green);
 }
 
-
 .donate-btn-item {
     width: 100%;
     display: flex;
@@ -111,12 +133,6 @@ footer * {
     height: 8vh;
 }
 
-.center-icon-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .btn {
     text-decoration: none;
     outline: 0;
@@ -126,6 +142,14 @@ footer * {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .4);
+}
+
+.btn:hover {
+    background-color: var(--secondary-dark-olive-green);
+}
+
+.btn:active {
+    background-color: var(--clicked-dark-olive-green);
 }
 
 .content-container {
@@ -203,8 +227,213 @@ footer * {
     border-bottom: 1px solid black;
     padding-bottom: .5rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .copyright {
     text-align: center;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.event p{
+    margin-top: 0;  
+    margin-bottom: 1rem;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reviews h2 {
+    margin-bottom: .5rem;
+}
+
+.rescue-title {
+    margin: .5rem 0;
+}
+
+.rescue-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rescue-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--dark-olive-green);
+    background-color: var(--light-olive-green);
+    overflow: hidden;
+    cursor: default;
+    transition: box-shadow .125s ease-in;
+}
+
+.rescue-card:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+}
+
+.card-img-container {
+    width: 100%;
+}
+
+.rescue-card-animal {
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 20vh;
+    /* border: 1px solid var(--dark-olive-green); */
+}
+
+.critter-bio {
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.critter-name:hover {
+    border-bottom: 1px solid var(--dark-olive-green);
+    cursor: pointer;
+}
+
+.learn-more-container {
+    width: 100%;
+    height: 100%;
+}
+
+.bio-and-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.img-cover-width {
+    width: 100%;
+}
+
+.img-cover-width img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.bio-and-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.faq-question p {
+    margin-left: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form {
+    background-color: var(--light-green);
+    border: 1px solid var(--dark-olive-green);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: 15px;
+    padding: 1rem;
+    width: inherit;
+}
+
+.contact-form input {
+    height: 1.5rem;
+}
+
+.contact-form textarea {
+    height: 5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media (min-width: 600px) {
+    .banner-btn {
+        background-size: cover;
+        height: 15vh
+    }
+    
+    .banner-btn .btn {
+        padding: 1.2rem 5rem;
+    }
+
+    .social-media {
+        width: 50%;
+    }
+
+    .center-icon-container {
+      display: none;
+    }
+    .lg-screen-nav-items {
+        display: flex;
+    }
+    .nav-list-item {
+        padding: .5rem;
+        border-bottom: none;
+    }
+    .nav-items {
+        display: none;
+    }
+    .rescue-card {
+        width: 30vw;
+    }
+    .img-cover-width img{
+        width: 30vw;
+    }
+    .bio-and-img p {
+        padding: 1rem;
+    }
+    .about-section-1 {
+        display: flex;
+        align-items: center;
+        background-color: var(--light-olive-green);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .about-section-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .event-section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contact-form {
+        max-width: 50vw;
+    }
+    .contact-container {
+        gap: 5rem;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
 }

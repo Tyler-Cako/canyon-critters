@@ -1,80 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canyon Critters</title>
     <link rel="stylesheet" href="css/index.css" />
 </head>
+
 <body>
     <div class="main">
         <nav class="navbar">
-                <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px"/>
-                <div class="center-icon-container">
-                    <img class="menu-icon" src="./public/icons/menu.svg" />
-                </div>             
-        </nav>
-
-            <div class="nav-items" hidden>
-                <div class="navbar">
-                    <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px"/>
-                <div class="center-icon-container">
-                    <img class="close-menu-icon icon" src="./public/icons/close.svg"></img>
-                </div>          
-                </div>
-                <ul class="nav-list">
+            <a href="./index.html">
+                <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px" />
+            </a>
+            <div class="lg-screen-nav-items">
+                <ul class="lg-screen-nav-list">
                     <li class="nav-list-item"><a href="./index.html">Home</a></li>
                     <li class="nav-list-item"><a href="./events.html">Events</a></li>
                     <li class="nav-list-item"><a href="./rescue.html">Rescue</a></li>
-                    <li class="nav-list-item"><a href="./news.html">News Coverage</a></li>
+                    <li class="nav-list-item"><a href="./news.html">News</a></li>
                     <li class="nav-list-item"><a href="./about.html">About</a></li>
                     <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
                 </ul>
-                <div class="close-menu-container">
-                    <a class="btn" href="https://venmo.com/u/Nico-Novelli" target="_blank">Donate</a>
+            </div>
+            <div class="center-icon-container">
+                <img class="menu-icon" src="./public/icons/menu.svg" />
+            </div>
+        </nav>
+
+        <div class="nav-items" hidden>
+            <div class="navbar">
+                <img class="logo" alt="Canyon Critters" src="./assets/logo-opacity.png" height="100px" width="150px" />
+                <div class="center-icon-container">
+                    <img class="close-menu-icon icon" src="./public/icons/close.svg"></img>
                 </div>
             </div>
-
-
-        <div class="container">
-            
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="./index.html">Home</a></li>
+                <li class="nav-list-item"><a href="./events.html">Events</a></li>
+                <li class="nav-list-item"><a href="./rescue.html">Rescue</a></li>
+                <li class="nav-list-item"><a href="./news.html">News Coverage</a></li>
+                <li class="nav-list-item"><a href="./about.html">About</a></li>
+                <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="close-menu-container">
+                <a class="btn" href="https://venmo.com/u/Nico-Novelli" target="_blank">Donate</a>
+            </div>
         </div>
 
-        </div>
 
-        <footer>
-            <div class="container">
-                <!-- <div class="footer-info">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Schedule an Event</a></li>
-                        <li><a href="#">Rescue</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul>
-                        <li>Canyon Critters</li>
-                        <li>PO Box 7231</li>
-                        <li>80403</li>
-                        <li>Golden Colorado</li>
-                        <li>303.642.0690</li>
-                        <li>nico@canyoncritters.com</li>
-                    </ul>
-                </div> -->
-
-                <div class="social-media">
-                    <a href="#" aria-label="facebook"><img width="50px" src="./public/icons/facebook.svg" ></a>
-                    <a href="#" aria-label="instagram"><img width="50px" src="./public/icons/instagram.svg" ></a>
-                    <a href="#" aria-label="youtube"><img width="50px" src="./public/icons/youtube.svg" ></a>
+        <div class="container content">
+            <h2>Contact Nico</h2>
+            <div class="contact-container">
+                <div>
+                    <p>nico@canyoncritters.com</p>
+                    <p>303.642.0690</p>
+                    <p>Canyon Critters</p>
+                    <p>PO Box 7231</p>
+                    <p>Golden</p>
+                    <p>Colorado</p>
+                    <p>80403</p>
                 </div>
-                
-                <p class="copyright">
-                    <a href="https://canyoncritters.com" title="">
-                        Licensed and Insured © Canyon Critters — All Rights Reserved © 2025
-                    </a>
+
+                <form class="contact-form">
+                    <h3>Submit Questions or Comments</h3>
+                    <label>Name</label>
+                    <input name="name" required/>
+                    <label>Email</label>
+                    <input name="email" required />
+                    <label>Phone</label>
+                    <input name="phone"/>
+                    <label>Question or Comments</label>
+                    <textarea name="question" required></textarea>
+                    <button type="submit" class="btn">Submit Question</button>
+                </form>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <ol>
+                    <li class="faq-question">
+                        <h4>ARE YOU LICENSED AND INSURED?</h4>
+                        <p><i> -
+                                Yes, Canyon Critters is insured, and we are also licensed by the USDA for our wolf
+                                shows. We always show all of our critters in a safe and responsible manner.
+                            </i></p>
+                    </li>
+                    <li class="faq-question">
+                        <h4>HOW FAR WILL YOU TRAVEL?</h4>
+                        <p><i> -
+                                Our critters travel around the entire greater metro Denver area, and Boulder and the
+                                Foothills. We have even performed as far north as Fort Collins and as far south as
+                                Colorado Springs. If you are interested in having Canyon Critters come to your event or
+                                party, give Nico a call at 303.642.0690.
+                            </i></p>
+                    </li>
+                    <li class="faq-question">
+                        <h4>DO YOU HAVE AN AGE LIMIT?</h4>
+                        <p><i> -
+                                No. Because we always show all of the critters in a safe and responsible manner, anyone
+                                who is interested and curious enough is welcome to attend a Canyon Critters reptile show
+                                or wolf show.
+                            </i></p>
+                    </li>
+                    <li class="faq-question">
+                        <h4>I’M READY TO SCHEDULE A SHOW. HOW DO I CONTACT YOU?</h4>
+                        <p><i> -
+                                You can call Nico at 303.642.0690, or you can contact him via email at
+                                nico@canyoncritters.com. You can also submit a question or a comment in the form to the
+                                right, or you can visit our contact page for more information.
+                            </i></p>
+                    </li>
+                    <li class="faq-question">
+                        <h4>DO I NEED TO BE WORRIED ABOUT GERMS IF MY KIDS HANDLE THE REPTILES?</h4>
+                        <p><i> -
+                                No. We emphasize proper hygiene by providing sanitizing wipes to disinfect your hands
+                                each time after touching the critters.
+                            </i></p>
+                    </li>
+                    <li class="faq-question">
+                        <h4>CAN WE TAKE OUR OWN PHOTOS?</h4>
+                        <p><i> -
+                                Yes, of course! There will be plenty of fun and unique photo opportunities for you to
+                                take advantage of, so be sure to have your camera ready.
+                            </i></p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <p>
+                    If you have any additional questions or comments, you can submit them in the form above. Or
+                    you can call Nico at 303.642.0690, you can contact him via email at nico@canyoncritters.com, or you
+                    can visit our contact page for more information. We look forward to meeting all of your animal
+                    entertainment needs!
                 </p>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- <div class="footer-info">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Schedule an Event</a></li>
+                    <li><a href="#">Rescue</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>Canyon Critters</li>
+                    <li>PO Box 7231</li>
+                    <li>80403</li>
+                    <li>Golden Colorado</li>
+                    <li>303.642.0690</li>
+                    <li>nico@canyoncritters.com</li>
+                </ul>
+            </div> -->
+
+            <div class="social-media">
+                <a href="#" aria-label="facebook"><img width="50px" src="./public/icons/facebook.svg"></a>
+                <a href="#" aria-label="instagram"><img width="50px" src="./public/icons/instagram.svg"></a>
+                <a href="#" aria-label="youtube"><img width="50px" src="./public/icons/youtube.svg"></a>
+            </div>
+
+            <p class="copyright">
+                <a href="https://canyoncritters.com" title="">
+                    Licensed and Insured © Canyon Critters — All Rights Reserved © 2025
+                </a>
+            </p>
+            <p><i>The best live reptile show in Colorado!</i></p>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
